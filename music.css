@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap");
+/* 
+
+font-family: 'Ubuntu', sans-serif; */
+
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-color: red; */
+  min-height: 100vh;
+  /* background: #c9ced3; */
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 12px;
+}
+
+.player-container {
+  height: 500px;
+  width: 400px;
+  background: #e7e7e7;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px 7px rgba(0, 0, 0, 0.7);
+  background: url('img/music-11.jpg');
+  background-repeat: no-repeat;
+  width: 58%;
+  position: relative;
+
+
+}
+
+
+
+.img-container {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  top: -50px;
+  left: 50px;
+
+}
+
+.img-container img {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 7px rgba(0, 0, 0, 0.9);
+}
+
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+  color: rgb(189, 86, 86)
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+  color: greenyellow;
+}
+
+.progress {
+  /* background: #242323; */
+  background: linear-gradient(to top left, black 0%, red 25%, blue 75%, cyan 100%);
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 0%;
+  /*time update event */
+
+  transition: width 0.1s linear;
+}
+
+
+.duration-wrapper {
+  position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 30%;
+  width: 200px;
+
+}
+
+.fas {
+  font-size: 30px;
+  cursor: pointer;
+  color: rgb(129, 129, 129);
+  margin-right: 30px;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(200%);
+
+}
+
+.main-button {
+  font-size: 40px;
+  position: relative;
+  top: 3px;
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 95vw;
+  }
+
+  /* .img-container {
+      left: 29px;
+    } */
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+    top: -10px;
+    left: 100px;
+  }
+}
+
+
+@media screen and (max-width: 709px) {
+
+
+  .img-container {
+    left: 29px;
+  }
+
+
+}
+
+@media screen and (max-width: 605px) {
+
+
+  .img-container {
+    width: 35vw;
+  }
+
+
+}
